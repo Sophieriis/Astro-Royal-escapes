@@ -1,3 +1,94 @@
 ---
 
 ---
+<nav>
+    <div class="logo">
+      <a href="/"><img src="public/logo.svg" alt="Logo"></a>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Forside</a></li>
+        <li class="dropdown">
+          <a href="#">Escape Rooms</a>
+          <div class="dropdown-content">
+            <a href="#">The Royal Mystery</a>
+            <a href="#">The Royal Dungeon</a>
+            <a href="#">The Royal Playroom</a>
+          </div>
+        </li>
+        <li><a href="#">Book nu</a></li>
+        <li><a href="#">Gavekort</a></li>
+        <li><a href="#">Om os</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+  <style>
+    nav {
+ 
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.logo img {
+  height: 90px;
+  padding: 50px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background-color: #fff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #f9f9f9;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  </style>
