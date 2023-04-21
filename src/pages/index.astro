@@ -15,7 +15,7 @@ import Galleri from "../components/Galleri.astro";
   </head>
   <Header />
   <body>
-    <video controls>
+    <video id="myVideo" loop>
       <source src="/video.m4v" type="video/mp4" />
     </video>
     <h1>DO YOU DARE <br> TO TRY?</h1>
@@ -25,7 +25,7 @@ import Galleri from "../components/Galleri.astro";
       unique way of bonding with another person, in a scary and time pressuring
       way. You have to experience it, to believe it.
     </p>
-    <p>Either way, you will have an unforgettable time at Royal Escapes</p>
+    <p class="text1">Either way, you will have an unforgettable time at Royal Escapes</p>
 	<Galleri/>
 	<Footer/>
   </body>
@@ -45,3 +45,8 @@ import Galleri from "../components/Galleri.astro";
 	left: 5%;
   }
 </style>
+
+<script>
+	const video = document.getElementById('myVideo');
+  	video.play();
+</script>
