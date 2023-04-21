@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Overskrift";
+    src: url(/public/Nosifer-Regular.woff2);
+}
+
+h1 {
+    font-family: "Overskrift";
+    font-size: 50px;
+    color: #990002;
+}
