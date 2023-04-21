@@ -4,24 +4,35 @@ import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<Header/>
-	<body>
-		<video controls>
-			<source src="/video.m4v" type="video/mp4">
-		</video>	
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <Header />
+  <body>
+    <video controls>
+      <source src="/video.m4v" type="video/mp4" />
+    </video>
+    <script
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+    ></script>
+    <lottie-player
+      src="lottiefiles/slowlogo.json"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px;"
+      loop
+      controls
+      autoplay></lottie-player>
+  </body>
 </html>
 
 <style>
-	video {
-		display: block;
-		margin: auto;
-	}
+  video {
+    display: block;
+    margin: auto;
+  }
 </style>
