@@ -32,3 +32,15 @@ p {
 body {
     background-color: black;
 }
+
+.text2 {
+    margin-left: 200px;
+    max-width: 500px;
+}
+
+.text3 {
+    margin-left: 700px;
+    margin-top: 150px;
+    max-width: 500px;
+    margin-bottom: 100px;
+}
