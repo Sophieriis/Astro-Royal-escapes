@@ -9,6 +9,15 @@ h1 {
     color: #990010;
 }
 
+@font-face {
+    font-family: "Tekst";
+    src: url(/public/Dosis-VariableFont_wght.woff2);
+}
+
+a, p, h2 {
+    font-family: "Tekst";
+}
+
 p, h2 {
     color: white;
     max-width: 600px;

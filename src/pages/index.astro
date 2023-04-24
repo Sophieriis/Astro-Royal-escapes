@@ -2,6 +2,7 @@
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Galleri from "../components/Galleri.astro";
+import Button from "../components/Button.astro";
 ---
 
 <html lang="en">
@@ -10,12 +11,12 @@ import Galleri from "../components/Galleri.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-	<link rel="stylesheet" href="src/styles/index.css" />
-    <title>Astro</title>
+	  <link rel="stylesheet" href="src/styles/index.css" />
+    <title>Royal Escapes</title>
   </head>
   <Header />
   <body>
-    <video id="myVideo" loop>
+    <video id="myVideo" loop >
       <source src="/video.m4v" type="video/mp4" />
     </video>
     <h1>DO YOU DARE <br> TO TRY?</h1>
@@ -26,10 +27,11 @@ import Galleri from "../components/Galleri.astro";
       way. You have to experience it, to believe it.
     </p>
     <p class="text1">Either way, you will have an unforgettable time at Royal Escapes</p>
-	<Galleri/>
-  <p class="text2">Hos Royal Escapes kan du tage din partner med og få en uhyggelig oplevelse sammen. I vil blive lukket ind i et rum sammen og i vil dermed ikke have nogen anden udvej, end at arbejde sammen. Fik du et koldt pust i nakken? Måske vil I rykke jer lidt tættere og se hvorfor i to er sådan en gode for hinanden. Om formår at klare det eller ej, så vil i have gjort det sammen og set helt nye sider af jer selv. Men hvem ved om i kommer ud derfra igen..?</p>
-  <p class="text3">Royal Escapes er et nyt escape room i hjertet af København. Med uhyggelige gåder og skumle mosterier, skal vi nok sørge for du får en oplevelse du ikke vil glemme.</p>
-	<Footer/>
+    <Button/>
+	  <Galleri/>
+    <p class="text2">Hos Royal Escapes kan du tage din partner med og få en uhyggelig oplevelse sammen. I vil blive lukket ind i et rum sammen og i vil dermed ikke have nogen anden udvej, end at arbejde sammen. Fik du et koldt pust i nakken? Måske vil I rykke jer lidt tættere og se hvorfor i to er sådan en gode for hinanden. Om formår at klare det eller ej, så vil i have gjort det sammen og set helt nye sider af jer selv. Men hvem ved om i kommer ud derfra igen..?</p>
+    <p class="text3">Royal Escapes er et nyt escape room i hjertet af København. Med uhyggelige gåder og skumle mosterier, skal vi nok sørge for du får en oplevelse du ikke vil glemme.</p>
+	  <Footer/>
   </body>
 </html>
 
