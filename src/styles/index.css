@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Overskrift";
-    src: url(/public/Nosifer-Regular.woff2);
+    src: url(/Nosifer-Regular.woff2);
 }
 
 h1 {
@@ -11,7 +11,7 @@ h1 {
 
 @font-face {
     font-family: "Tekst";
-    src: url(/public/Dosis-VariableFont_wght.woff2);
+    src: url(/Dosis-VariableFont_wght.woff2);
 }
 
 a, p, h2 {

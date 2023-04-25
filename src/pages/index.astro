@@ -16,7 +16,7 @@ import Button from "../components/Button.astro";
   </head>
   <Header />
   <body>
-    <video id="myVideo" loop >
+    <video id="myVideo" loop autoplay repeat >
       <source src="/video.m4v" type="video/mp4" />
     </video>
     <h1>DO YOU DARE <br> TO TRY?</h1>
@@ -54,7 +54,4 @@ import Button from "../components/Button.astro";
   }
 </style>
 
-<script>
-	  const video = document.getElementById('myVideo');
-  	video.play();
-</script>
+
