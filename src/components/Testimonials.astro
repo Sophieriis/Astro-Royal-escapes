@@ -1,0 +1,21 @@
+---
+const url = "https://nkmtthtthfqhiaontzpe.supabase.co/rest/v1/RoyalEscapes";
+const api = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5rbXR0aHR0aGZxaGlhb250enBlIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODI1MjIzODEsImV4cCI6MTk5ODA5ODM4MX0.bLa2T5LC0QCH1XPcYq_ea5vaBk_ekk2PhRwZPYieOGY";
+
+const data = await fetch(url, {
+    method: "GET",
+    headers: {
+        apikey: api,
+    },
+}).then((res) => res.json());
+
+console.log(data);
+
+import Testimonial from "../components/Testimonial.astro";
+---
+
+{
+    data.map((testimonial)=>{
+        return <Testimonial data={testimonial}/>
+    })
+}
