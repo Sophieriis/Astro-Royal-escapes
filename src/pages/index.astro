@@ -22,8 +22,7 @@ import Testimonials from "../components/Testimonials.astro";
       <source src="/video.m4v" type="video/mp4" />
     </video>
     <h1>DO YOU DARE <br> TO TRY?</h1>
-    <h2>Having trouble in your relationship?</h2>
-    <p>
+    <p class="intro">
       Why escape each other, when you can escape together. Escape room are an
       unique way of bonding with another person, in a scary and time pressuring
       way. You have to experience it, to believe it.
@@ -31,8 +30,7 @@ import Testimonials from "../components/Testimonials.astro";
     <p class="text1">Either way, you will have an unforgettable time at Royal Escapes</p>
     <Button/>
 	  <Galleri/>
-    <p class="text2">Hos Royal Escapes kan du tage din partner med og få en uhyggelig oplevelse sammen. I vil blive lukket ind i et rum sammen og i vil dermed ikke have nogen anden udvej, end at arbejde sammen. Fik du et koldt pust i nakken? Måske vil I rykke jer lidt tættere og se hvorfor i to er sådan en gode for hinanden. Om formår at klare det eller ej, så vil i have gjort det sammen og set helt nye sider af jer selv. Men hvem ved om i kommer ud derfra igen..?</p>
-    <p class="text3">Royal Escapes er et nyt escape room i hjertet af København. Med uhyggelige gåder og skumle mosterier, skal vi nok sørge for du får en oplevelse du ikke vil glemme.</p>
+    <Testimonials/>
     <Footer/>
   </body>
 </html>
@@ -49,6 +47,12 @@ import Testimonials from "../components/Testimonials.astro";
 	position: absolute;
 	top: 20%;
 	left: 5%;
+  }
+
+  .intro {
+    margin-top: 150px;
+    font-size: 30px;
+    text-align: center;
   }
 </style>
 

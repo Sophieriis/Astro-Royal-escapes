@@ -7,3 +7,26 @@ const {data} = Astro.props;
         <h2>{data.title}</h2>
         <p>{data.description}</p>
     </article>
+
+    <style>
+        article {
+            background: white;
+            margin-left: 300px;
+            margin-right: 300px;
+        
+        }
+
+        p, h2 {
+            color: black;
+            justify-content: center;
+            margin-left: 100px;
+        }
+
+        p {
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            padding-top: 20px;
+        }
+    </style>
